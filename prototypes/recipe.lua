@@ -27,12 +27,12 @@ data:extend({
         {
             {type="fluid", name="lava", amount=1}
         },
-        icon = "__base__/graphics/icons/fluid/heavy-oil.png",
+        icon = "__base__/graphics/icons/fluid/heavy-oil.png"
   },
   {
      type = "recipe",
         name = "crystallizer",
-        enabled = true,
+        enabled = false,
         ingredients = {
             {"assembling-machine-3", 1},
             {"steel-plate", 20},
@@ -46,8 +46,9 @@ data:extend({
         type = "recipe",
         name = "mohole-iron-ore",
         category = "mohole",
-        enabled = true,
+        enabled = false,
         energy_required = 10,
+        subgroup = "raw-resource",
         ingredients =
         {
             {type="fluid", name="lava", amount=1},
@@ -55,8 +56,9 @@ data:extend({
         },
         results=
         {
-            {type="item", name="iron-ore", amount=2}
+            {type="item", name="iron-ore", amount=2},
+            {type="item", name="stone", amount=8},
         },
-        icon = "__base__/graphics/icons/fluid/heavy-oil.png",
-  },
+        icon = "__base__/graphics/icons/iron-ore.png"
+  }
 })
