@@ -12,6 +12,14 @@ data:extend({
         {
             type = "unlock-recipe",
             recipe = "lava"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "crystallizer"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "mohole-iron-ore"
         }
       },
       unit =
