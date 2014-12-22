@@ -78,5 +78,25 @@ data:extend({
             {type="item", name="copper-ore", amount=2},
             {type="item", name="stone", amount=8},
         },
-     
+        icon = "__base__/graphics/icons/copper-ore.png"
+  },
+  {
+        type = "recipe",
+        name = "mohole-stone",
+        category = "mohole",
+        enabled = false,
+        energy_required = 1,
+        subgroup = "raw-resource",
+        ingredients =
+        {
+            {type="fluid", name="mohole-lava", amount=1},
+            {type="fluid", name="water", amount=10}
+        },
+        results=
+        {
+            {type="fluid", name="water", amount=10},
+            {type="item", name="stone", amount=10},
+        },
+        icon = "__base__/graphics/icons/stone.png"
+  }
 })

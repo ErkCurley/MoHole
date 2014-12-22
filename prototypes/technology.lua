@@ -24,6 +24,10 @@ data:extend({
         {
             type = "unlock-recipe",
             recipe = "mohole-copper-ore"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "mohole-stone"        
         }
       },
       unit =
