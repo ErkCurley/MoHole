@@ -102,7 +102,7 @@ data:extend( {
                 base_level = 1,
                 pipe_connections = { { type = "output", position = { - 2, - 3 } } }
             }
-        }
-        --pipe_covers = pipecoverspictures()
+        },
+        pipe_covers = pipecoverspictures()
     }
 } )
