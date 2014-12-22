@@ -1,10 +1,10 @@
 data:extend( {
     {
         type = "assembling-machine",
-        name = "mohole",
+        name = "mohole-mohole",
         icon = "__base__/graphics/icons/oil-refinery.png",
         flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 1, result = "mohole" },
+        minable = { mining_time = 1, result = "mohole-mohole" },
         max_health = 300,
         corpse = "big-remnants",
         dying_explosion = "huge-explosion",
@@ -108,10 +108,10 @@ data:extend( {
 
     {
         type = "assembling-machine",
-        name = "crystallizer",
+        name = "mohole-crystallizer",
         icon = "__base__/graphics/icons/electric-furnace.png",
         flags = {"placeable-neutral","placeable-player", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.5, result = "crystallizer"},
+        minable = {hardness = 0.2, mining_time = 0.5, result = "mohole-crystallizer"},
         max_health = 300,
         corpse = "big-remnants",
         dying_explosion = "huge-explosion",
@@ -161,7 +161,6 @@ data:extend( {
         },
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-        fast_replaceable_group = "assembling-machine",
         animation =
         {
             filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3.png",

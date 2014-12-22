@@ -7,19 +7,23 @@ data:extend({
       {
         {
             type = "unlock-recipe",
-            recipe = "mohole"
+            recipe = "mohole-mohole"
         },
         {
             type = "unlock-recipe",
-            recipe = "lava"
+            recipe = "mohole-lava"
         },
         {
             type = "unlock-recipe",
-            recipe = "crystallizer"
+            recipe = "mohole-crystallizer"
         },
         {
             type = "unlock-recipe",
             recipe = "mohole-iron-ore"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "mohole-copper-ore"
         }
       },
       unit =

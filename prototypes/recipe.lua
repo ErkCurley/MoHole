@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "recipe",
-        name = "mohole",
+        name = "mohole-mohole",
         enabled = false,
         ingredients = {
             {"laser-turret", 25},
@@ -11,13 +11,13 @@ data:extend({
             {"steel-plate", 100},
             {"alien-artifact", 10}
         },
-        result = "mohole"
+        result = "mohole-mohole"
     },
     {
         type = "recipe",
-        name = "lava",
+        name = "mohole-lava",
         category = "mohole",
-        enabled = false,
+        enabled = true,
         energy_required = 1,
         ingredients =
         {
@@ -25,13 +25,13 @@ data:extend({
         },
         results=
         {
-            {type="fluid", name="lava", amount=1}
+            {type="fluid", name="mohole-lava", amount=1}
         },
         icon = "__base__/graphics/icons/fluid/heavy-oil.png"
   },
   {
      type = "recipe",
-        name = "crystallizer",
+        name = "mohole-crystallizer",
         enabled = false,
         ingredients = {
             {"assembling-machine-3", 1},
@@ -40,7 +40,7 @@ data:extend({
             {"storage-tank", 1},
             {"alien-artifact", 1}
         },
-        result = "crystallizer"
+        result = "mohole-crystallizer"
   },
   {
         type = "recipe",
@@ -51,7 +51,7 @@ data:extend({
         subgroup = "raw-resource",
         ingredients =
         {
-            {type="fluid", name="lava", amount=1},
+            {type="fluid", name="mohole-lava", amount=1},
             {type="item", name="iron-plate", amount=1}
         },
         results=
@@ -60,5 +60,23 @@ data:extend({
             {type="item", name="stone", amount=8},
         },
         icon = "__base__/graphics/icons/iron-ore.png"
-  }
+  },
+  {
+        type = "recipe",
+        name = "mohole-copper-ore",
+        category = "mohole",
+        enabled = false,
+        energy_required = 10,
+        subgroup = "raw-resource",
+        ingredients =
+        {
+            {type="fluid", name="mohole-lava", amount=1},
+            {type="item", name="copper-plate", amount=1}
+        },
+        results=
+        {
+            {type="item", name="copper-ore", amount=2},
+            {type="item", name="stone", amount=8},
+        },
+     
 })
