@@ -90,11 +90,11 @@ data:extend({
         ingredients =
         {
             {type="fluid", name="mohole-lava", amount=1},
-            {type="fluid", name="water", amount=10}
+            {type="fluid", name="water", amount=175}
         },
         results=
         {
-            {type="fluid", name="water", amount=10},
+            {type="fluid", name="water", amount=175},
             {type="item", name="stone", amount=10},
         },
         icon = "__base__/graphics/icons/stone.png"
