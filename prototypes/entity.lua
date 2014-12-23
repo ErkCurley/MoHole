@@ -148,7 +148,7 @@ data:extend( {
                 base_level = 1,
                 pipe_connections = {{ type="output", position = {0, 2} }}
             },
-            off_when_no_fluid_recipe = true
+            off_when_no_fluid_recipe = false
         },
         open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
         close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
