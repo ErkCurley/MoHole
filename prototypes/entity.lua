@@ -15,13 +15,14 @@ data:extend( {
         crafting_categories = { "mohole" },
         crafting_speed = 1,
         has_backer_name = true,
+        light = {intensity = 1, size = 10},
         energy_source =
         {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions = 0.03 / 3.5
+            emissions = 0.1
         },
-        energy_usage = "420kW",
+        energy_usage = "10MW",
         ingredient_count = 3,
         animation =
         {
