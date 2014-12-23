@@ -8,7 +8,7 @@ game.onevent(defines.events.onbuiltentity, function(event)
 		end
 				
 		table.insert(glob.moholeCrystallizers, event.createdentity)
-        if isDebug then game.player.print("Crystallizer added")
+        if isDebug then game.player.print("Crystallizer added") end
 	end
 end)
 
@@ -24,7 +24,7 @@ game.onevent(defines.events.ontick, function(event)
 				end
 			else
 				table.remove(glob.moholeCrystallizers, k)
-				if isDebug then game.player.print("Crystallizer removed")
+				if isDebug then game.player.print("Crystallizer removed") end
 			end
 		end
 	end
