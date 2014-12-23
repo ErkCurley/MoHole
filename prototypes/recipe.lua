@@ -85,7 +85,7 @@ data:extend({
         name = "mohole-stone",
         category = "mohole",
         enabled = false,
-        energy_required = 1,
+        energy_required = 10,
         subgroup = "raw-resource",
         ingredients =
         {

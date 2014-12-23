@@ -32,14 +32,15 @@ data:extend({
       },
       unit =
       {
-        count = 50,
+        count = 100,
         ingredients =
         {
-          {"science-pack-1", 1},
+          {"science-pack-1", 2},
           {"science-pack-2", 1},
-          {"science-pack-3", 1}
+          {"science-pack-3", 1},
+          {"science-pack-4", 1}
         },
-        time = 20
+        time = 60
       }
   }
 })
