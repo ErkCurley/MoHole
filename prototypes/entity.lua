@@ -111,7 +111,7 @@ data:extend( {
     {
         type = "assembling-machine",
         name = "mohole-crystallizer",
-        icon = "__base__/graphics/icons/electric-furnace.png",
+        icon = "__Mohole__/graphics/icons/crystallizer.png",
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "mohole-crystallizer"},
         max_health = 300,
@@ -128,24 +128,18 @@ data:extend( {
         {
             {
                 production_type = "input",
-                pipe_picture = assembler3pipepictures(),
-                pipe_covers = pipecoverspictures(),
                 base_area = 10,
                 base_level = -1,
                 pipe_connections = {{ type="input", position = {1, -2} }}
             },
             {
                 production_type = "input",
-                pipe_picture = assembler3pipepictures(),
-                pipe_covers = pipecoverspictures(),
                 base_area = 10,
                 base_level = -1,
                 pipe_connections = {{ type="input", position = {-1, -2} }}
             },
             {
                 production_type = "output",
-                pipe_picture = assembler3pipepictures(),
-                pipe_covers = pipecoverspictures(),
                 base_area = 10,
                 base_level = 1,
                 pipe_connections = {{ type="output", position = {0, 2} }}
@@ -173,13 +167,38 @@ data:extend( {
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         animation =
         {
-            filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3.png",
-            priority = "high",
-            width = 142,
-            height = 113,
-            frame_count = 32,
-            line_length = 8,
-            shift = {0.84, -0.09}
+            north =
+            {
+                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002-m.png",
+                width = 96,
+                height = 140,
+                frame_count = 1,
+                shift = {0.0, -0.59}
+            },
+            east =
+            {
+                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002-m.png",
+                width = 96,
+                height = 140,
+                frame_count = 1,
+                shift = {0.0, -0.59}
+            },
+            south =
+            {
+                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002-m.png",
+                width = 96,
+                height = 140,
+                frame_count = 1,
+                shift = {0.0, -0.59}
+            },
+            west =
+            {
+                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002-m.png",
+                width = 96,
+                height = 140,
+                frame_count = 1,
+                shift = {0.0, -0.59}
+            },
         },
         crafting_categories = {"mohole"},
         crafting_speed = 1,

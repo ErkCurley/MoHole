@@ -12,7 +12,7 @@ data:extend({
     {
 		type = "item",
 		name = "mohole-crystallizer",
-		icon = "__base__/graphics/icons/electric-furnace.png",
+		icon = "__Mohole__/graphics/icons/crystallizer.png",
 		flags = {"goes-to-quickbar"},
 		subgroup = "production-machine",
 		order = "a[mohole-crystallizer]",
