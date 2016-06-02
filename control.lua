@@ -1,21 +1,25 @@
-require "defines"
-local isDebug = false
+require("util")
+require("defines")
+
+
+
+local isDebug = true
  
-game.onevent(defines.events.onbuiltentity, function(event)
-	if event.createdentity.name == "mohole-crystallizer" then
-		if glob.moholeCrystallizers == nil then
-			glob.moholeCrystallizers = {}
+script.on_event(defines.events.on_built_entity, function(event)
+	if defines.events.created_entity == "mohole-crystallizer" then
+		if global.moholeCrystallizers == nil then
+			global.moholeCrystallizers = {}
 		end
 				
-		table.insert(glob.moholeCrystallizers, event.createdentity)
+		table.insert(global.moholeCrystallizers, event.created_entity)
         if isDebug then game.player.print("Crystallizer added") end
 	end
 end)
 
 
 
-game.onevent(defines.events.ontick, function(event)
-	if glob.moholeCrystallizers ~= nil then
+script.on_event(defines.events.on_tick, function(event)
+	if global.moholeCrystallizers ~= nil then
 		for k,crystallizer in pairs(glob.moholeCrystallizers) do
 			if crystallizer.valid then
 				if  #crystallizer.fluidbox == 3 and crystallizer.fluidbox[3] ~= nil then
@@ -23,7 +27,7 @@ game.onevent(defines.events.ontick, function(event)
                     crystallizer.fluidbox[3] = {type = fluid.type, temperature = 100, amount = fluid.amount}
 				end
 			else
-				table.remove(glob.moholeCrystallizers, k)
+				table.remove(global.moholeCrystallizers, k)
 				if isDebug then game.player.print("Crystallizer removed") end
 			end
 		end
