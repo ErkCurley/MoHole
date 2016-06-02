@@ -7,7 +7,7 @@ data:extend( {
         minable = { mining_time = 1, result = "mohole-mohole" },
         max_health = 300,
         corpse = "big-remnants",
-        dying_explosion = "huge-explosion",
+        dying_explosion = "explosion",
         collision_box = { { - 2.4, - 2.4 }, { 2.4, 2.4 } },
         selection_box = { { - 2.5, - 2.5 }, { 2.5, 2.5 } },
         module_slots = 2,
@@ -116,7 +116,7 @@ data:extend( {
         minable = {hardness = 0.2, mining_time = 0.5, result = "mohole-crystallizer"},
         max_health = 300,
         corpse = "big-remnants",
-        dying_explosion = "huge-explosion",
+        dying_explosion = "explosion",
         resistances = 
         {
             {
