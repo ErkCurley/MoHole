@@ -2,7 +2,7 @@ data:extend({
     {
         type = "recipe",
         name = "mohole-mohole",
-        enabled = false,
+        enabled = true,
         ingredients = {
             {"laser-turret", 25},
             {"smart-inserter", 25},
@@ -32,7 +32,7 @@ data:extend({
   {
      type = "recipe",
         name = "mohole-crystallizer",
-        enabled = false,
+        enabled = true,
         ingredients = {
             {"assembling-machine-3", 1},
             {"steel-plate", 20},
@@ -45,14 +45,14 @@ data:extend({
   {
         type = "recipe",
         name = "mohole-iron-ore",
-        category = "mohole",
-        enabled = false,
+        category = "crystallizer",
+        enabled = true,
         energy_required = 10,
         subgroup = "raw-resource",
         ingredients =
         {
-            {type="fluid", name="mohole-lava", amount=1},
-            {type="item", name="iron-plate", amount=1}
+            {type="fluid", name="mohole-lava", amount=1}
+            
         },
         results=
         {
@@ -64,14 +64,13 @@ data:extend({
   {
         type = "recipe",
         name = "mohole-copper-ore",
-        category = "mohole",
-        enabled = false,
+        category = "crystallizer",
+        enabled = true,
         energy_required = 10,
         subgroup = "raw-resource",
         ingredients =
         {
-            {type="fluid", name="mohole-lava", amount=1},
-            {type="item", name="copper-plate", amount=1}
+            {type="fluid", name="mohole-lava", amount=1}
         },
         results=
         {
@@ -83,8 +82,8 @@ data:extend({
   {
         type = "recipe",
         name = "mohole-stone",
-        category = "mohole",
-        enabled = false,
+        category = "crystallizer",
+        enabled = true,
         energy_required = 10,
         subgroup = "raw-resource",
         ingredients =
