@@ -1,9 +1,9 @@
 {
     "name": "Mohole",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "title": "Mohole",
     "author": "Starholme",
-    "homepage": "https://github.com/Starholme/factorio-MoHole",
+    "homepage": "https://github.com/ErkCurley/MoHole",
     "dependencies": ["base"],
     "description": "Very deep mining, with massive pollution"
 }
