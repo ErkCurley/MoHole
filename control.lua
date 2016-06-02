@@ -3,7 +3,7 @@ require("defines")
 
 
 
-local isDebug = true
+local isDebug = false
  
 script.on_event(defines.events.on_built_entity, function(event)
 	if defines.events.created_entity == "mohole-crystallizer" then
