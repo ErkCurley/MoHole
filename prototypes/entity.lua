@@ -28,7 +28,7 @@ data:extend( {
         {
             north =
             {
-                filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
+                filename = "__Mohole__/graphics/entity/mohole/mohole_b0.png",
                 width = 337,
                 height = 255,
                 frame_count = 1,
@@ -36,8 +36,7 @@ data:extend( {
             },
             east =
             {
-                filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
-                x = 337,
+                filename = "__Mohole__/graphics/entity/mohole/mohole_b0.png",
                 width = 337,
                 height = 255,
                 frame_count = 1,
@@ -45,8 +44,7 @@ data:extend( {
             },
             south =
             {
-                filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
-                x = 674,
+                filename = "__Mohole__/graphics/entity/mohole/mohole_b0.png",
                 width = 337,
                 height = 255,
                 frame_count = 1,
@@ -54,8 +52,7 @@ data:extend( {
             },
             west =
             {
-                filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
-                x = 1011,
+                filename = "__Mohole__/graphics/entity/mohole/mohole_b0.png",
                 width = 337,
                 height = 255,
                 frame_count = 1,
