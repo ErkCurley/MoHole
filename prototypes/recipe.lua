@@ -5,7 +5,7 @@ data:extend({
         enabled = true,
         ingredients = {
             {"laser-turret", 25},
-            {"smart-inserter", 25},
+            {"filter-inserter", 25},
             {"substation", 2},
             {"explosives", 100},
             {"steel-plate", 100},

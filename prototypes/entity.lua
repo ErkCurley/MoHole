@@ -169,7 +169,7 @@ data:extend( {
         {
             north =
             {
-                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002-m.png",
+                filename = "__Mohole__/graphics/entity/crystallizer/cryst0001.png",
                 width = 96,
                 height = 140,
                 frame_count = 1,
@@ -177,7 +177,7 @@ data:extend( {
             },
             east =
             {
-                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002-m.png",
+                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002.png",
                 width = 96,
                 height = 140,
                 frame_count = 1,
@@ -185,7 +185,7 @@ data:extend( {
             },
             south =
             {
-                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002-m.png",
+                filename = "__Mohole__/graphics/entity/crystallizer/cryst0003.png",
                 width = 96,
                 height = 140,
                 frame_count = 1,
@@ -193,14 +193,14 @@ data:extend( {
             },
             west =
             {
-                filename = "__Mohole__/graphics/entity/crystallizer/cryst0002-m.png",
+                filename = "__Mohole__/graphics/entity/crystallizer/cryst0004.png",
                 width = 96,
                 height = 140,
                 frame_count = 1,
                 shift = {0.0, -0.59}
             },
         },
-        crafting_categories = {"mohole"},
+        crafting_categories = {"crystallizer"},
         crafting_speed = 1,
         energy_source =
         {
