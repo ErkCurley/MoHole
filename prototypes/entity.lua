@@ -8,12 +8,16 @@ data:extend( {
         max_health = 300,
         corpse = "big-remnants",
         dying_explosion = "explosion",
-        collision_box = { { - 2.4, - 2.4 }, { 2.4, 2.4 } },
-        selection_box = { { - 2.5, - 2.5 }, { 2.5, 2.5 } },
-        module_slots = 2,
-        allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+        collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+        selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+        module_specification =
+        {
+          module_slots = 3
+        },
+        scale_entity_info_icon = true,
+        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
         crafting_categories = { "mohole" },
-        crafting_speed = 1,
+        crafting_speed = 2,
         has_backer_name = true,
         light = {intensity = 1, size = 10},
         energy_source =
@@ -24,8 +28,21 @@ data:extend( {
         },
         energy_usage = "10MW",
         ingredient_count = 3,
-        animation =
+        animation = make_4way_animation_from_spritesheet({ layers =
         {
+          {
+            filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
+            width = 337,
+            height = 255,
+            frame_count = 1,
+            shift = {2.515625, 0.484375},
+            hr_version = {
+              filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery.png",
+              width = 386,
+              height = 430,
+              frame_count = 1,
+              shift = util.by_pixel(0, -7.5),
+              scale = 0.5
             north =
             {
                 filename = "__Mohole__/graphics/entity/mohole/mohole_b0.png",
@@ -58,26 +75,37 @@ data:extend( {
                 frame_count = 1,
                 shift = { 2.515625, 0.484375 }
             }
-        },
+          }
+        }}),
         working_visualisations =
         {
+          {
+            north_position = util.by_pixel(34, -65),
+            east_position = util.by_pixel(-52, -61),
+            south_position = util.by_pixel(-59, -82),
+            west_position = util.by_pixel(57, -58),
+            animation =
             {
-                north_position = { 1.03125, - 1.55 },
-                east_position = { - 1.65625, - 1.3 },
-                south_position = { - 1.875, - 2.0 },
-                west_position = { 1.8437, - 1.2 },
-                animation =
-                {
-                    filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
-                    frame_count = 29,
-                    width = 16,
-                    height = 35,
-                    scale = 1.5,
-                    shift = { 0, - 0.5625 },
-                    run_mode = "backward"
-                },
-                light = { intensity = 0.4, size = 6 }
-            }
+              filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
+              line_length = 10,
+              width = 20,
+              height = 40,
+              frame_count = 60,
+              animation_speed = 0.75,
+              shift = util.by_pixel(0, -14),
+              hr_version = {
+                filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
+                line_length = 10,
+                width = 40,
+                height = 81,
+                frame_count = 60,
+                animation_speed = 0.75,
+                scale = 0.5,
+                shift = util.by_pixel(0, -14.25),
+              },
+            },
+            light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+          }
         },
         working_sound =
         {
@@ -87,20 +115,38 @@ data:extend( {
         },
         fluid_boxes =
         {
-            {
-                production_type = "input",
-                pipe_covers = pipecoverspictures(),
-                base_area = 10,
-                base_level = -1,
-                pipe_connections = { { type = "input", position = { - 2, 3 } } }
-            },
-            {
-                production_type = "output",
-                pipe_covers = pipecoverspictures(),
-                base_area = 10,
-                base_level = 1,
-                pipe_connections = { { type = "output", position = { - 2, - 3 } } }
-            }
+          {
+            production_type = "input",
+            pipe_covers = pipecoverspictures(),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{ type="input", position = {-1, 3} }}
+          },
+          {
+            production_type = "input",
+            pipe_covers = pipecoverspictures(),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{ type="input", position = {1, 3} }}
+          },
+          {
+            production_type = "output",
+            pipe_covers = pipecoverspictures(),
+            base_level = 1,
+            pipe_connections = {{ position = {-2, -3} }}
+          },
+          {
+            production_type = "output",
+            pipe_covers = pipecoverspictures(),
+            base_level = 1,
+            pipe_connections = {{ position = {0, -3} }}
+          },
+          {
+            production_type = "output",
+            pipe_covers = pipecoverspictures(),
+            base_level = 1,
+            pipe_connections = {{ position = {2, -3} }}
+          }
         },
         pipe_covers = pipecoverspictures()
     },
@@ -125,18 +171,21 @@ data:extend( {
         {
             {
                 production_type = "input",
+                pipe_covers = pipecoverspictures(),
                 base_area = 10,
                 base_level = -1,
                 pipe_connections = {{ type="input", position = {1, -2} }}
             },
             {
                 production_type = "input",
+                pipe_covers = pipecoverspictures(),
                 base_area = 10,
                 base_level = -1,
                 pipe_connections = {{ type="input", position = {-1, -2} }}
             },
             {
                 production_type = "output",
+                pipe_covers = pipecoverspictures(),
                 base_area = 10,
                 base_level = 1,
                 pipe_connections = {{ type="output", position = {0, 2} }}
@@ -162,6 +211,7 @@ data:extend( {
         },
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+        target_temperature = 500,
         animation =
         {
             north =
@@ -198,7 +248,7 @@ data:extend( {
             },
         },
         crafting_categories = {"crystallizer"},
-        crafting_speed = 1,
+        crafting_speed = 4,
         energy_source =
         {
             type = "electric",
@@ -207,7 +257,11 @@ data:extend( {
         },
         energy_usage = "210kW",
         ingredient_count = 3,
-        module_slots = 2,
+        module_specification =
+        {
+          module_slots = 3
+        },
+        scale_entity_info_icon = true,
         allowed_effects = {"consumption", "speed", "productivity", "pollution"}
     }
 } )
