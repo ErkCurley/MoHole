@@ -43,6 +43,7 @@ data:extend( {
               frame_count = 1,
               shift = util.by_pixel(0, -7.5),
               scale = 0.5
+            },
             north =
             {
                 filename = "__Mohole__/graphics/entity/mohole/mohole_b0.png",
