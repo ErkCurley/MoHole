@@ -95,5 +95,41 @@ data:extend({
             {type="item", name="stone", amount=10}
         },
         icon = "__base__/graphics/icons/stone.png"
+  },
+  {
+        type = "recipe",
+        name = "mohole-uranium",
+        category = "crystallizer",
+        enabled = false,
+        energy_required = 10,
+        subgroup = "raw-resource",
+        ingredients =
+        {
+            {type="fluid", name="mohole-lava", amount=1},
+        },
+        results=
+        {
+            {type="item", name="uranium-ore", amount=2},
+            {type="item", name="stone", amount=8},
+        },
+        icon = "__base__/graphics/icons/uranium-ore.png"
+  },
+  {
+        type = "recipe",
+        name = "mohole-oil",
+        category = "crystallizer",
+        enabled = false,
+        energy_required = 10,
+        subgroup = "raw-resource",
+        ingredients =
+        {
+            {type="fluid", name="water", amount=10},
+            {type="item", name="stone", amount=10},
+        },
+        results=
+        {
+            {type="fluid", name="crude-oil", amount=5},
+        },
+        icon = "__base__/graphics/icons/crude-oil.png"
   }
 })

@@ -29,6 +29,10 @@ data:extend({
       {
           type = "unlock-recipe",
           recipe = "mohole-stone"        
+      },
+      {
+          type = "unlock-recipe",
+          recipe = "mohole-uranium"        
       }
     },
     unit =
@@ -40,6 +44,31 @@ data:extend({
         {"science-pack-2", 1},
         {"science-pack-3", 1},
         {"high-tech-science-pack", 1}
+      },
+      time = 60,
+      order = "d-a"
+    }
+  },
+  {
+    type = "technology",
+    name = "mohole-shale-oil",
+    icon = "__base__/graphics/technology/advanced-material-processing.png",
+    prerequisites = {"oil-processing"},
+    effects =
+    {
+      {
+          type = "unlock-recipe",
+          recipe = "mohole-oil"        
+      }
+    },
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1}
       },
       time = 60,
       order = "d-a"
