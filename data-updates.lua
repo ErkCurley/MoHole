@@ -1,11 +1,11 @@
 if not angelsrefining then
     if data.raw.item["angels-ore1"] then
-        data.raw.recipe["mohole-angel-ore1"] =
+        data.raw.recipe["angels-ore1"] =
           {
             type = "recipe",
-            name = "mohole-angel-ore1",
+            name = "angels-ore1",
             category = "crystallizer",
-            enabled = false,
+            enabled = true,
             energy_required = 10,
             subgroup = "raw-resource",
             ingredients =
@@ -21,12 +21,12 @@ if not angelsrefining then
           }
     end
     if data.raw.item["angels-ore2"] then
-        data.raw.recipe["mohole-angel-ore2"] =
+        data.raw.recipe["angels-ore2"] =
           {
             type = "recipe",
-            name = "mohole-angel-ore2",
+            name = "angels-ore2",
             category = "crystallizer",
-            enabled = false,
+            enabled = true,
             energy_required = 10,
             subgroup = "raw-resource",
             ingredients =
@@ -42,12 +42,12 @@ if not angelsrefining then
           }
     end
     if data.raw.item["angels-ore3"] then
-        data.raw.recipe["mohole-angel-ore3"] =
+        data.raw.recipe["angels-ore3"] =
           {
             type = "recipe",
-            name = "mohole-angel-ore3",
+            name = "angels-ore3",
             category = "crystallizer",
-            enabled = false,
+            enabled = true,
             energy_required = 10,
             subgroup = "raw-resource",
             ingredients =
@@ -63,12 +63,12 @@ if not angelsrefining then
           }
     end
     if data.raw.item["angels-ore4"] then
-        data.raw.recipe["mohole-angel-ore4"] =
+        data.raw.recipe["angels-ore4"] =
           {
             type = "recipe",
-            name = "mohole-angel-ore4",
+            name = "angels-ore4",
             category = "crystallizer",
-            enabled = false,
+            enabled = true,
             energy_required = 10,
             subgroup = "raw-resource",
             ingredients =
@@ -84,12 +84,12 @@ if not angelsrefining then
           }
     end
     if data.raw.item["angels-ore5"] then
-        data.raw.recipe["mohole-angel-ore5"] =
+        data.raw.recipe["angels-ore5"] =
           {
             type = "recipe",
-            name = "mohole-angel-ore5",
+            name = "angels-ore5",
             category = "crystallizer",
-            enabled = false,
+            enabled = true,
             energy_required = 10,
             subgroup = "raw-resource",
             ingredients =
@@ -105,12 +105,12 @@ if not angelsrefining then
           }
     end
     if data.raw.item["angels-ore6"] then
-        data.raw.recipe["mohole-angel-ore6"] =
+        data.raw.recipe["angels-ore6"] =
           {
             type = "recipe",
-            name = "mohole-angel-ore6",
+            name = "angels-ore6",
             category = "crystallizer",
-            enabled = false,
+            enabled = true,
             energy_required = 10,
             subgroup = "raw-resource",
             ingredients =
