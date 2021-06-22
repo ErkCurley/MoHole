@@ -2,7 +2,8 @@ data:extend({
   {
     type = "technology",
     name = "mohole-technology",
-    icon = "__base__/graphics/technology/advanced-material-processing.png",
+    icon = "__Mohole__/graphics/icons/mohole.png",
+    icon_size = 32,
     prerequisites = {"steel-processing"},
     effects =
     {
@@ -37,13 +38,14 @@ data:extend({
     },
     unit =
     {
-      count = 100,
+      count = 1000,
       ingredients =
       {
-        {"science-pack-1", 2},
-        {"science-pack-2", 1},
-        {"science-pack-3", 1},
-        {"high-tech-science-pack", 1}
+        {"automation-science-pack", 5},
+        {"logistic-science-pack", 4},
+        {"chemical-science-pack", 3},
+        {"production-science-pack", 2},
+        {"utility-science-pack", 1}
       },
       time = 60,
       order = "d-a"
@@ -52,7 +54,8 @@ data:extend({
   {
     type = "technology",
     name = "mohole-shale-oil",
-    icon = "__base__/graphics/technology/advanced-material-processing.png",
+    icon = "__Mohole__/graphics/icons/mohole.png",
+    icon_size = 32,
     prerequisites = {"oil-processing"},
     effects =
     {
@@ -66,9 +69,9 @@ data:extend({
       count = 100,
       ingredients =
       {
-        {"science-pack-1", 1},
-        {"science-pack-2", 1},
-        {"science-pack-3", 1}
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"chemical-science-pack", 1},
       },
       time = 60,
       order = "d-a"

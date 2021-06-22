@@ -27,7 +27,8 @@ data:extend({
         {
             {type="fluid", name="mohole-lava", amount=10}
         },
-        icon = "__base__/graphics/icons/fluid/heavy-oil.png"
+        icon = "__base__/graphics/icons/fluid/heavy-oil.png",
+        icon_size = 64
   },
   {
      type = "recipe",
@@ -58,7 +59,8 @@ data:extend({
             {type="item", name="iron-ore", amount=2},
             {type="item", name="stone", amount=8},
         },
-        icon = "__base__/graphics/icons/iron-ore.png"
+        icon = "__base__/graphics/icons/iron-ore.png",
+        icon_size = 64
   },
   {
         type = "recipe",
@@ -76,7 +78,8 @@ data:extend({
             {type="item", name="copper-ore", amount=2},
             {type="item", name="stone", amount=8},
         },
-        icon = "__base__/graphics/icons/copper-ore.png"
+        icon = "__base__/graphics/icons/copper-ore.png",
+        icon_size = 64
   },
   {
         type = "recipe",
@@ -94,7 +97,8 @@ data:extend({
         {
             {type="item", name="stone", amount=10}
         },
-        icon = "__base__/graphics/icons/stone.png"
+        icon = "__base__/graphics/icons/stone.png",
+        icon_size = 64
   },
   {
         type = "recipe",
@@ -112,7 +116,8 @@ data:extend({
             {type="item", name="uranium-ore", amount=2},
             {type="item", name="stone", amount=8},
         },
-        icon = "__base__/graphics/icons/uranium-ore.png"
+        icon = "__base__/graphics/icons/uranium-ore.png",
+        icon_size = 64
   },
   {
         type = "recipe",
@@ -130,6 +135,7 @@ data:extend({
         {
             {type="fluid", name="crude-oil", amount=5},
         },
-        icon = "__base__/graphics/icons/crude-oil.png"
+        icon = "__base__/graphics/icons/fluid/crude-oil.png",
+        icon_size = 64
   }
 })
