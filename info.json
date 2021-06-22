@@ -1,8 +1,8 @@
 {
     "name": "Mohole",
-    "version": "0.0.7",
-	"factorio_version": "0.15",
+    "version": "0.1.0",
+	"factorio_version": "1.1.x",
     "title": "Mohole",
-    "author": "Erkcurley - Current & Starholme",
-    "description": "Very deep mining, with massive pollution"
+    "author": "Erkcurley",
+    "description": "Very deep mining, with pollution"
 }
