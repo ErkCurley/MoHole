@@ -136,5 +136,24 @@ data:extend({
         },
         icon = "__base__/graphics/icons/fluid/crude-oil.png",
         icon_size = 64
+  },
+  {
+    type = "recipe",
+    name = "mohole-coal",
+    category = "crystallizer",
+    enabled = false,
+    energy_required = 10,
+    subgroup = "raw-resource",
+    ingredients =
+    {
+        {type="fluid", name="water", amount=10},
+        {type="item", name="stone", amount=10},
+    },
+    results=
+    {
+        {type="item", name="coal", amount=5},
+    },
+    icon = "__base__/graphics/icons/coal-1.png",
+    icon_size = 64
   }
 })
