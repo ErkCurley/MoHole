@@ -34,7 +34,11 @@ data:extend({
       {
           type = "unlock-recipe",
           recipe = "mohole-uranium"        
-      }
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "mohole-coal"        
+    }
     },
     unit =
     {
@@ -75,32 +79,6 @@ data:extend({
       },
       time = 60,
       order = "d-a"
-    },
-    {
-      type = "technology",
-      name = "mohole-coal",
-      icon = "__Mohole__/graphics/icons/mohole.png",
-      icon_size = 32,
-      prerequisites = {"oil-processing"},
-      effects =
-      {
-        {
-            type = "unlock-recipe",
-            recipe = "mohole-coal"        
-        }
-      },
-      unit =
-      {
-        count = 100,
-        ingredients =
-        {
-          {"automation-science-pack", 2},
-          {"logistic-science-pack", 2},
-          {"chemical-science-pack", 1},
-        },
-        time = 60,
-        order = "d-a"
-      }
     }
   }
 })
